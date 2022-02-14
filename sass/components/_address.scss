@@ -1,0 +1,68 @@
+.addr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 767px) {
+    align-items: flex-start;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+  &-link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: $grey;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      margin-bottom: 0;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:focus,
+    &:hover {
+      color: $blue;
+      fill: $blue;
+    }
+    &:hover .mail-icon,
+    &:hover .tel-icon,
+    &:focus .mail-icon,
+    &:focus .tel-icon {
+      fill: $blue;
+    }
+  }
+}
+.mail-icon {
+  fill: $grey;
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  @media screen and (min-width: 768px) {
+    width: 14px;
+    height: 10px;
+  }
+}
+.tel-icon {
+  fill: $grey;
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  @media screen and (min-width: 768px) {
+    width: 10px;
+    height: 14px;
+  }
+}

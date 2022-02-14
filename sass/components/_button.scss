@@ -1,0 +1,36 @@
+.button {
+  display: inline-block;
+  margin-top: 50px;
+  border: 1px solid#2196f3;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 32px;
+  padding-left: 32px;
+}
+.openModalBtn {
+  background-color: $blue;
+  color: $white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+.closeModalBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: $white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:focus .icon-close,
+  &:hover .icon-close {
+    fill: $blue;
+  }
+}
